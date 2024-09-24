@@ -1,0 +1,57 @@
+/* Общие стили для всего приложения */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Запрещаем горизонтальную прокрутку */
+  background-color: #e4e6ff;
+}
+
+/* Контейнер для навигации с размытием */
+.nav-container {
+  padding: 0 5%; /* Отступы по краям */
+  display: flex;
+  justify-content: space-between; /* Равномерное распределение кнопок */
+  flex-wrap: wrap; /* Чтобы кнопки не выходили за пределы экрана */
+  box-sizing: border-box;
+  margin-bottom: 3%;
+  background-color: #e4e6ff11; /* Полупрозрачный фон */
+  backdrop-filter: blur(6px); /* Размытие фона */
+  -webkit-backdrop-filter: blur(20px); /* Размытие для Safari */
+}
+
+/* Стили для навигационных ссылок */
+.nav-link {
+  background-color: rgba(255, 228, 255, 0.8); /* Полупрозрачный цвет кнопок */
+  border: 2px solid #050505;
+  border-radius: 30px;
+  box-shadow: #161616 4px 4px 0 0;
+  color: #1f1e1d;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px; /* Шрифт меньше для мобильных устройств */
+  padding: 0 10px; /* Уменьшенные внутренние отступы */
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px; /* Добавлен небольшой отступ между кнопками */
+  flex: 1; /* Растягиваем кнопки на ширину экрана */
+  box-sizing: border-box;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Легкий эффект при наведении */
+}
+
+.nav-link:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+/* Адаптивные стили для планшетов и больших экранов */
+@media (min-width: 768px) {
+  .nav-link {
+    min-width: 100px; /* Ширина кнопки для больших экранов */
+    padding: 0 15px;
+  }
+}

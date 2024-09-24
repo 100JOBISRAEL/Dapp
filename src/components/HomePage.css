@@ -1,0 +1,67 @@
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Контейнер для бордеров */
+.border-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px; /* Максимальная ширина для бордеров */
+  margin-bottom: 20px; /* Отступ между бордерами и остальным контентом */
+}
+
+/* Стиль для бордеров */
+.ton-border, .ghost-border {
+  flex: 1; /* Равномерное распределение */
+  border: 2px solid #ffffff; /* Белый бордер */
+  border-radius: 10px; /* Скругленные углы */
+  padding: 15px; /* Внутренние отступы */
+  margin: 0 10px; /* Отступ между бордерами */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для бордеров */
+  text-align: center; /* Центрируем текст внутри бордеров */
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+}
+
+.ton-logo {
+  width: 25px; /* Ширина логотипа, можно изменить по желанию */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  margin-bottom: 10px; /* Отступ между логотипом и заголовком */
+}
+
+.balance-title {
+  font-weight: bold; /* Жирный текст для заголовка */
+  margin-bottom: 5px; /* Отступ между заголовком и балансом */
+}
+
+.balance-value {
+  font-weight: normal; /* Тонкий текст для значений */
+}
+
+.profit-text {
+  font-size: smaller; /* Меньший размер шрифта для прибыли */
+  margin-top: 5px; /* Отступ между балансом и прибылью */
+}
+
+.profit-value {
+  font-weight: normal; /* Тонкий текст для значений прибыли */
+}
+
+
+/* Стили для градиентных кнопок */
+.btn-gradient {
+  background-image: linear-gradient(to right, rgb(1, 134, 218), rgb(182, 49, 167));
+  border: 0;
+  color: white; /* Цвет текста */
+  padding: 10px 15px; /* Отступы вокруг текста */
+  border-radius: 5px; /* Скругление углов */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.btn-gradient:hover {
+  opacity: 0.8; /* Эффект при наведении */
+}

@@ -1,0 +1,83 @@
+/* Фиксируем навигационную панель */
+.nav-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000; /* Чтобы навигация была поверх содержимого */
+}
+
+/* Основное содержимое страницы */
+.content-container {
+    margin-bottom: 80px; /* Оставляем место для фиксированной навигации */
+    padding: 20px;
+}
+
+/* Контейнер для каждого призрака */
+.ghost-container {
+    display: flex;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: flex-start; /* Выровнять по верхнему краю */
+}
+
+/* Стили для изображения призрака */
+.ghost-image {
+    width: 120px;
+    height: 120px;
+    align-self: center;
+    margin-right: 10px; /* Увеличенный отступ для большей симметрии */
+}
+
+/* Стили для информации о призраке */
+.ghost-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределяем пространство */
+    color: #1d1d1d;
+}
+
+/* Контейнер для информации */
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца */
+    gap: 5px; /* Отступ между ячейками */
+}
+
+/* Стили для прибыли и других метрик */
+.profit-info, .launches-info, .limit-info, .autofarm-info {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение */
+}
+
+.profit-label, .launches-label, .limit-label, .autofarm-label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.profit-value, .launches-value, .limit-value, .autofarm-value {
+    font-weight: normal;
+    font-size: 12px; /* Меньший шрифт для значений */
+}
+
+/* Стили для кнопки */
+.buy-button {
+    margin-top: 10px; /* Увеличенный отступ сверху для кнопки */
+    padding: 10px 20px;
+    background-color: #e4e6ff;
+    color: #242424;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    align-self: left; /* Центруем кнопку */
+}
+
+.buy-button:hover {
+    background-color: #e4e6ff;
+}
